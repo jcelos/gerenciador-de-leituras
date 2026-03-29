@@ -1,69 +1,104 @@
-# Gerenciador de Leituras
+# gerenciador-de-leituras
 
-Repositório do projeto final da disciplina **TSI32B — Desenvolvimento de Páginas Web com Framework e CSS (UTFPR)**.
+**Autor:** João Paulo Vasconcelos
 
-## 1. Tema e Problema
-Leitores iniciantes e recorrentes normalmente controlam leituras de forma fragmentada (anotações soltas, apps genéricos, planilhas), o que dificulta acompanhar progresso, histórico e metas.
+Este projeto tem como objetivo implementar progressivamente uma aplicacao web para organizar leituras pessoais (livros que quero ler, estou lendo e ja li), com cadastro, edicao, avaliacao e filtros.
 
-Este projeto propõe uma aplicação web para centralizar a gestão da estante pessoal, incluindo cadastro de livros, status de leitura, avaliação e organização por gênero.
+O frontend foi desenvolvido com HTML, CSS, Bootstrap e JavaScript. O backend e simulado com API Fake usando JSON Server.
 
-## 2. Escopo da Entrega (Atividade Estrutural)
-Esta entrega contempla a definição estrutural do projeto:
-- Definição do problema e objetivo do produto
-- Regras de negócio e escopo funcional (PRD)
-- Estrutura inicial de dados e especificação técnica (SPEC)
-- Organização do repositório oficial no GitHub
+## Documentacao do Projeto
 
-## 3. Artefatos Obrigatórios
-Os arquivos exigidos no enunciado estão na pasta `docs/`:
-- `docs/prd.md`
-- `docs/spec.md`
+Para entender regras de negocio, escopo e estrutura tecnica, consulte:
 
-## 4. Estrutura do Repositório
-```text
-projeto/
-├── docs/
-│   ├── prd.md
-│   └── spec.md
-├── data/
-│   └── db.json
-├── src/
-│   ├── css/
-│   ├── js/
-│   └── scss/
-├── index.html
-├── estante.html
-├── cadastro.html
-├── detalhes.html
-├── perfil.html
-├── login.html
-├── lp.html
-└── README.md
+- [Product Requirements Document (PRD)](docs/prd.md)
+- [Especificacao Tecnica (SPEC)](docs/spec.md)
+
+## Design
+
+No momento, a atividade estrutural contempla PRD e SPEC.
+
+- Design System: em definicao
+- Prototipo no Figma: em definicao
+
+## Site em Producao
+
+Em desenvolvimento.
+
+## Tecnologias e Dependencias
+
+- Framework CSS: Bootstrap 5
+- JavaScript: jQuery
+- API Fake: JSON Server
+- Qualidade de codigo: ESLint e Prettier
+- Estilizacao: Sass (SCSS)
+
+## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
+
+### RA1 - Framework CSS e responsividade
+- [ ] ID 01 - Protótipo mobile e desktop
+- [ ] ID 02 - Layout responsivo com framework CSS
+- [ ] ID 03 - Layout responsivo com CSS puro
+- [ ] ID 04 - Componentes de framework (card, button, modal, carousel)
+- [ ] ID 05 - Uso de unidades relativas
+- [ ] ID 06 - Design System consistente
+- [ ] ID 07 - Uso de Sass com variaveis/mixins/funcoes
+- [ ] ID 08 - Tipografia responsiva
+- [ ] ID 09 - Responsividade de imagens
+- [ ] ID 10 - Otimizacao de imagens
+
+### RA2 - Formularios e validacoes
+- [ ] ID 11 - Validacao HTML nativa
+- [ ] ID 12 - Validacao com REGEX
+- [ ] ID 13 - Uso de checkbox/radio/select
+- [ ] ID 14 - Persistencia com Web Storage
+
+### RA3 - Ferramentas de desenvolvimento
+- [x] ID 15 - Node.js e NPM configurados
+- [x] ID 16 - Versionamento com Git/GitHub e .gitignore
+- [x] ID 17 - README padronizado com checklist
+- [x] ID 18 - Organizacao modular de arquivos
+- [x] ID 19 - ESLint e Prettier configurados
+
+### RA4 - Bibliotecas JavaScript
+- [ ] ID 20 - Uso de jQuery para interatividade
+- [ ] ID 21 - Plugin jQuery relevante (ex.: mask)
+
+### RA5 - Requisicoes assincronas
+- [ ] ID 22 - Requisicoes para API Fake para persistencia
+- [ ] ID 23 - Requisicoes para API Fake para exibicao
+- [ ] ID 24 - Requisicoes para API publica
+
+## Manual de Execucao
+
+1. Clonar o repositorio:
+```bash
+git clone https://github.com/jcelos/gerenciador-de-leituras.git
+cd gerenciador-de-leituras
 ```
 
-## 5. Como Executar Localmente
-Pré-requisitos:
-- Node.js 18+
-- npm 9+
-
-Comandos:
+2. Instalar dependencias:
 ```bash
-npm install
+npm i
+```
+
+3. Executar API Fake:
+```bash
 npm run api
 ```
 
-Abra os arquivos HTML com Live Server (ou servidor estático equivalente).
+4. Em outro terminal, executar compilacao SCSS (opcional durante desenvolvimento):
+```bash
+npm run sass
+```
 
-## 6. Dados da Entrega
-Preencha antes de submeter:
-- Aluno(a): `PREENCHER_NOME_COMPLETO`
-- Turma/Disciplina: `TSI32B`
-- Link público do repositório GitHub: `PREENCHER_LINK_REPOSITORIO`
+5. Abrir as paginas HTML no navegador (ou com Live Server no VS Code).
 
-## 7. Checklist de Submissão
-- [x] Tema do projeto definido
-- [x] Regras de negócio mapeadas no PRD
-- [x] Estrutura inicial de dados documentada no SPEC
-- [x] Arquivos `docs/prd.md` e `docs/spec.md` versionados
-- [ ] Repositório publicado no GitHub
-- [ ] Link público copiado no campo da tarefa
+## Telas da Aplicacao
+
+- `lp.html` - Landing page
+- `login.html` - Login
+- `index.html` - Dashboard inicial
+- `estante.html` - Lista de livros
+- `cadastro.html` - Cadastro/edicao de livro
+- `detalhes.html` - Detalhes do livro
+- `perfil.html` - Perfil/preferencias
