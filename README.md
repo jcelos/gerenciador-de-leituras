@@ -15,10 +15,7 @@ Para entender regras de negocio, escopo e estrutura tecnica, consulte:
 
 ## Design
 
-No momento, a atividade estrutural contempla PRD e SPEC.
-
-- Design System: em definicao
-- Prototipo no Figma: em definicao
+https://stitch.withgoogle.com/projects/11086232145645190116
 
 ## Site em Producao
 
